@@ -10,5 +10,4 @@ from datetime import datetime
 
 cnx = sqlite3.connect('data/database.sqlite')
 player_data = pd.read_sql_query("SELECT * FROM Player_Attributes", cnx)
-print(player_data.head())
-
+player_data.head()
